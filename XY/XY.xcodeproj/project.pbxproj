@@ -14,6 +14,11 @@
 		29AB992722B9378A0079C4B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AB992522B9378A0079C4B4 /* LaunchScreen.storyboard */; };
 		29AB993222B9378A0079C4B4 /* XYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AB993122B9378A0079C4B4 /* XYTests.swift */; };
 		29AB993D22B9378A0079C4B4 /* XYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AB993C22B9378A0079C4B4 /* XYUITests.swift */; };
+		29AB994B22BA725D0079C4B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AB994A22BA725D0079C4B4 /* Images.xcassets */; };
+		29AB995122BA74D70079C4B4 /* Mine in Resources */ = {isa = PBXBuildFile; fileRef = 29AB994C22BA74D70079C4B4 /* Mine */; };
+		29AB995222BA74D70079C4B4 /* Seller in Resources */ = {isa = PBXBuildFile; fileRef = 29AB994D22BA74D70079C4B4 /* Seller */; };
+		29AB995522BA74D70079C4B4 /* Other in Resources */ = {isa = PBXBuildFile; fileRef = 29AB995022BA74D70079C4B4 /* Other */; };
+		29AB995722BA74E90079C4B4 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 29AB995622BA74E90079C4B4 /* Home */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		29AB993822B9378A0079C4B4 /* XYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AB993C22B9378A0079C4B4 /* XYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYUITests.swift; sourceTree = "<group>"; };
 		29AB993E22B9378A0079C4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29AB994A22BA725D0079C4B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29AB994C22BA74D70079C4B4 /* Mine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mine; sourceTree = "<group>"; };
+		29AB994D22BA74D70079C4B4 /* Seller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Seller; sourceTree = "<group>"; };
+		29AB995022BA74D70079C4B4 /* Other */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Other; sourceTree = "<group>"; };
+		29AB995622BA74E90079C4B4 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,19 @@
 		29AB991B22B937890079C4B4 /* XY */ = {
 			isa = PBXGroup;
 			children = (
+				29AB994C22BA74D70079C4B4 /* Mine */,
+				29AB995622BA74E90079C4B4 /* Home */,
+				29AB995822BA750C0079C4B4 /* MyCity */,
+				29AB995922BA751B0079C4B4 /* Notice */,
+				29AB995022BA74D70079C4B4 /* Other */,
+				29AB994D22BA74D70079C4B4 /* Seller */,
 				29AB991C22B937890079C4B4 /* AppDelegate.swift */,
 				29AB991E22B937890079C4B4 /* ViewController.swift */,
 				29AB992022B9378A0079C4B4 /* Main.storyboard */,
 				29AB992322B9378A0079C4B4 /* Assets.xcassets */,
 				29AB992522B9378A0079C4B4 /* LaunchScreen.storyboard */,
 				29AB992822B9378A0079C4B4 /* Info.plist */,
+				29AB994A22BA725D0079C4B4 /* Images.xcassets */,
 			);
 			path = XY;
 			sourceTree = "<group>";
@@ -123,6 +140,20 @@
 				29AB993E22B9378A0079C4B4 /* Info.plist */,
 			);
 			path = XYUITests;
+			sourceTree = "<group>";
+		};
+		29AB995822BA750C0079C4B4 /* MyCity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyCity;
+			sourceTree = "<group>";
+		};
+		29AB995922BA751B0079C4B4 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +261,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AB992722B9378A0079C4B4 /* LaunchScreen.storyboard in Resources */,
+				29AB994B22BA725D0079C4B4 /* Images.xcassets in Resources */,
 				29AB992422B9378A0079C4B4 /* Assets.xcassets in Resources */,
+				29AB995722BA74E90079C4B4 /* Home in Resources */,
+				29AB995522BA74D70079C4B4 /* Other in Resources */,
 				29AB992222B9378A0079C4B4 /* Main.storyboard in Resources */,
+				29AB995122BA74D70079C4B4 /* Mine in Resources */,
+				29AB995222BA74D70079C4B4 /* Seller in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wtj.XY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,8 +487,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wtj.XY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
